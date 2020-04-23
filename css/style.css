@@ -17,8 +17,8 @@
 }
 
 body {
-    background: #5F6937;
-    color: #fff;
+    background: #DED7CA;
+    color: #000;
 }
 
 .title {
@@ -26,6 +26,7 @@ body {
     font-weight: 700;
     line-height: 18px;
     padding: 0 0 20px;
+    text-transform: uppercase;
 }
 
 .text {
@@ -38,7 +39,8 @@ body {
 /* Header */
 
 .header {
-    background-image: url(../img/bgup2.png);
+    background-image: url(../img/bg.jpg);
+    background-size: contain;
     color: #fff;
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 .nav__link {
-    display: inline;
+    display: inline-block;
     padding: 0 15px;
     font-size: 18px;
     height: 40px;
@@ -63,6 +65,14 @@ body {
     color: #fff;
     text-decoration: none;
     outline: none;
+
+    transition: all 0.2s ease
+}
+
+.nav__link:hover {
+    border-radius: 8px;
+    background-color: #00000089;
+    transition: all 0.2s ease
 }
 
 
@@ -177,7 +187,7 @@ label, a{ /*при наведении на стрелки или переклю�
     display: inline-block; /*расположение в строку*/
     width: 15px;
     height: 15px;
-    background: #2C3E28;
+    background: #000;
 }
 
 #active{ /*расположение блока с переключателями*/
@@ -186,8 +196,8 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active label:hover{ /*поведение чекбокса при наведении*/
-    background: #9A945C;
-    border-color: #9A945C !important; /*выполнение в любом случае*/
+    background: #996300;
+    border-color: #996300 !important; /*выполнение в любом случае*/
 }
 
 /*цвет активного лейбла при активации чекбокса*/
@@ -196,8 +206,8 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch3:checked ~ #active label:nth-child(3),
 #switch4:checked ~ #active label:nth-child(4),
 #switch5:checked ~ #active label:nth-child(5){
-    background: #D3CA7E;
-    border-color: #D3CA7E !important;
+    background: #FFA500;
+    border-color: #FFA500 !important;
 }
 
 #slides .image{ /*анимация пролистывания изображений*/
@@ -216,7 +226,7 @@ label, a{ /*при наведении на стрелки или переклю�
     content: "";
     display: block;
     margin: 30px auto;
-    background: #2C3E28;
+    background: #000;
     width: 600px;
     height: 3px;
 }
@@ -233,10 +243,6 @@ label, a{ /*при наведении на стрелки или переклю�
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.contant__item {
-
 }
 
 
@@ -263,10 +269,11 @@ label, a{ /*при наведении на стрелки или переклю�
 /* Footer */
 
 .footer {
-    background-image: url(../img/bgup2.png);
+    background-image: url(../img/bg.jpg);
+    background-size: contain;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer__title {
