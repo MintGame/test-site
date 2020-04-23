@@ -9,6 +9,8 @@
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    background: #fff;
+    padding: 20px 0;
 }
 
 .out-container {
@@ -17,7 +19,7 @@
 }
 
 body {
-    background: #DED7CA;
+    background: #DFD7CA;
     color: #000;
 }
 
@@ -26,7 +28,6 @@ body {
     font-weight: 700;
     line-height: 18px;
     padding: 0 0 20px;
-    text-transform: uppercase;
 }
 
 .text {
@@ -79,14 +80,13 @@ body {
 /* Info block */
 
 .info {
-    height: 100px;
+    text-align: center;
 }
 
 
 /* Slider block */
 
 .slider {
-    padding-top: 20px;
     text-align: center;
 }
 
@@ -187,7 +187,7 @@ label, a{ /*при наведении на стрелки или переклю�
     display: inline-block; /*расположение в строку*/
     width: 15px;
     height: 15px;
-    background: #000;
+    background: #000000;
 }
 
 #active{ /*расположение блока с переключателями*/
@@ -226,7 +226,7 @@ label, a{ /*при наведении на стрелки или переклю�
     content: "";
     display: block;
     margin: 30px auto;
-    background: #000;
+    background: #000000;
     width: 600px;
     height: 3px;
 }
@@ -236,7 +236,6 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .video {
     text-align: center;
-    padding: 20px 0;
 }
 
 .video__contant {
@@ -245,11 +244,9 @@ label, a{ /*при наведении на стрелки или переклю�
     justify-content: center;
 }
 
-
 /* Gallery block */
 
 .gallery {
-    padding: 20px 0;
     text-align: center;
 }
 
