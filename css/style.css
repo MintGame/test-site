@@ -45,7 +45,7 @@ body {
 .text {
     line-height: 18px;
     font-style: italic;
-    padding: 0 60px 15px;
+    padding: 0 40px 15px;
     text-align: justify;
 }
 
@@ -428,6 +428,7 @@ body {
 
     .text {
         font-size: 24px;
+        padding: 0 10px 15px;
     }
 
     .title-text {
