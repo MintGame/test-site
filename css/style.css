@@ -192,7 +192,7 @@ body {
 }
 
 .footer-logo {
-    display: inline;
+    display: inline-block;
     text-decoration: none;
     outline: none;
     color: #fff;
@@ -273,10 +273,9 @@ body {
 
 .interesting {
     display: inline-block;
-    height: 32px;
+    height: 30px;
     margin: 0 5px;
-    line-height: 32px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
     text-decoration: none;
     outline: none;
