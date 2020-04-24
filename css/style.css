@@ -26,14 +26,13 @@ body {
 .title {
     font-size: 24px;
     font-weight: 700;
-    line-height: 18px;
     padding: 0 0 20px;
+    text-transform: uppercase;
 }
 
 .title-text {
     font-size: 20px;
     font-weight: 700;
-    line-height: 18px;
     padding: 0 0 20px;
 }
 
@@ -90,6 +89,25 @@ body {
     text-align: center;
 }
 
+.info__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__item {
+    padding: 10px 0;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.info__img {
+    width: 650px;
+}
+
+
 
 /* Slider block */
 
@@ -127,7 +145,7 @@ article img{ /*размер изображений слайдера*/
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-    max-width: 960px; /*максимальнная длинна*/
+    max-width: 800px; /*максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
@@ -198,7 +216,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active{ /*расположение блока с переключателями*/
-    margin: 210px 0 0;
+    margin: 180px 0 0;
     text-align: center;
 }
 
@@ -247,8 +265,14 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .video__contant {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contant__item {
+    margin: 0 -10px;
+    padding: 0 10px;
 }
 
 /* Gallery block */
@@ -320,7 +344,7 @@ label, a{ /*при наведении на стрелки или переклю�
     line-height: 25px;
     transition: all 0.2s ease;
     padding: 0 7px 0 0;
-    
+
 }
 
 .super__link {
