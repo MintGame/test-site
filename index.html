@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru, en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
   <title>School Project</title>
 </head>
 <body>
@@ -72,42 +74,39 @@
       <div class="container">
         <h1 id="photo" class="title">Как это было</h1>
 
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam eaque perspiciatis animi eos aut repellendus impedit ex, at molestias.</p>
-
-        <div class="all">
-          <input checked type="radio" name="respond" id="desktop">
-          <article id="slider">
-              <input checked type="radio" name="slider" id="switch1">
-              <input type="radio" name="slider" id="switch2">
-              <input type="radio" name="slider" id="switch3">
-              <input type="radio" name="slider" id="switch4">
-              <input type="radio" name="slider" id="switch5">
-            <div id="slides">
-              <div id="overflow">
-                <div class="image">
-                  <article><img src="img/slider/1.jpg"></article>
-                  <article><img src="img/slider/2.jpg"></article>
-                  <article><img src="img/slider/3.jpg"></article>
-                  <article><img src="img/slider/4.jpg"></article>
-                  <article><img src="img/slider/5.jpg"></article>
-                </div>
-              </div>
+        <div id="carouselExampleIndicators" class="p-0 carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/slider/1.jpg" alt="First slide">
             </div>
-            <div id="controls">
-              <label for="switch1"></label>
-              <label for="switch2"></label>
-              <label for="switch3"></label>
-              <label for="switch4"></label>
-              <label for="switch5"></label>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slider/2.jpg" alt="Second slide">
             </div>
-            <div id="active">
-              <label for="switch1"></label>
-              <label for="switch2"></label>
-              <label for="switch3"></label>
-              <label for="switch4"></label>
-              <label for="switch5"></label>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slider/3.jpg" alt="Third slide">
             </div>
-          </article>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slider/4.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slider/5.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </section>
@@ -118,15 +117,13 @@
         <div class="video__flex">
           <h1 id="videos" class="title">Документальное видео</h1>
 
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quam asperiores molestias reprehenderit veniam, accusamus laboriosam accusantium unde cum at!</p>
-
           <div class="video__contant">
             <div class="contant__item">
-                <iframe width="470px" height="264px" src="https://www.youtube.com/embed/RadpIKFsotc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="videoyt" width="470px" height="264px" src="https://www.youtube.com/embed/RadpIKFsotc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <div class="contant__item">
-                <iframe width="470px" height="264px" src="https://www.youtube.com/embed/eulg-KJ-e4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="videoyt" width="470px" height="264px" src="https://www.youtube.com/embed/eulg-KJ-e4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -137,8 +134,6 @@
     <section class="gallery">
       <div class="container">
         <h1 id="gallery" class="title">Ваша Победа в наших сердцах!</h1>
-
-        <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, omnis voluptate consequuntur blanditiis quam magnam tempora voluptas magni molestiae eos!</span>
 
         <div class="gallery__flex">
           <img class="gallery__img" src="img/gallery/10.jpg" alt="2">
@@ -159,22 +154,51 @@
 
         <div class="footer__flex">
           <a href="http://s7gub.ru/" class="footer-logo" target="_blank"><img class="logo_img" src="img/school.png" alt="">МБОУ "СОШ №7"</a>
+          <a href="http://s7gub.ru/" class="footer-logo-out" target="_blank"><img class="logo_img" src="img/school.png" alt=""></a>
 
           <div class="contacts">
             <ul class="contants__info">
                 <li class="li info__li1"><a class="super__link" href="tel:+73493652077">+7(349) 365-20-77</a></li>
-              <li class="li info__li2">ул. 14 микрорайон, 32, Губкинский</li>
+                <li class="li info__li2"><a class="super__link" href="https://yandex.ru/maps/11228/gubkinskiy/?ll=76.509972%2C64.436889&mode=search&oid=86935270591&ol=biz&z=17.93">ул. 14 микрорайон, 32, Губкинский</a></li>
                 <li class="li info__li3"><a class="super__link" href="mailto: s7@mogub.yanao.ru">s7@mogub.yanao.ru</a></li>
             </ul>
+          </div>
+          <div class="contacts-out">
+            <a class="super__link" href="tel:+73493652077"><img class="super__link-out" src="img/phone.png" alt=""></a>
+            <a href="https://yandex.ru/maps/11228/gubkinskiy/?ll=76.509972%2C64.436889&mode=search&oid=86935270591&ol=biz&z=17.93"><img class="super__link-out" src="img/address.png" alt=""></a>
+            <a class="super__link" href="mailto: s7@mogub.yanao.ru"><img class="super__link-out" src="img/email.png" alt=""></a>
           </div>
 
           <div class="footer__links">
             <a href="https://vk.com/public181550693" class="link" target="_blank"><img class="contacts_link" src="img/vk.png" alt="vk"></a>
             <a href="https://www.instagram.com/s7gbk/" class="link"><img class="contacts_link" src="img/instagram.png" alt="inst" target="_blank"></a>
+            <a href="javascript:PopUpShow()" class="interesting">Тык!!!</a>
           </div>
         </div>
+
       </div>
+
+      <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+        <div class="interesting_item">
+            <div class="not-flex">
+                <p class="inst_p">Большое спасибо за&nbsp;помощь в&nbsp;проекте Анисимовой Анне</p>
+                <a target="_blank" href="https://vk.com/annna12" class="a_link inst_a"><img class="img_a" src="img/vk.png"></a>
+                <a target="_blank" href="https://www.instagram.com/_annaanisimova/" class="a_link vk_a"><img class="img_a" src="img/instagram.png"></a><br>
+                <a class="tik" href="javascript:PopUpHide()">Тык!</a>
+            </div>
+
+            <div class="make">Made by #Team4Web</div>
+        </div>
+        </div>
+    </div>
     </footer>
   </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
