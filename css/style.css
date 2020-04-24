@@ -479,7 +479,7 @@ body {
     }
 
     .logo, .nav__link{
-        font-size: 16px;
+        font-size: 14px;
         height: 20px;
         line-height: 20px;
     }
@@ -525,7 +525,7 @@ body {
     }
 
     .logo, .nav__link{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .footer__flex {
@@ -569,6 +569,6 @@ body {
     }
 
     .logo, .nav__link{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
