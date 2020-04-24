@@ -46,6 +46,7 @@ body {
     line-height: 18px;
     font-style: italic;
     padding: 0 60px 15px;
+    text-align: justify;
 }
 
 
@@ -124,15 +125,6 @@ body {
 
 .p-o {
     padding: 20px;
-}
-
-.all::after {
-    content: "";
-    display: block;
-    margin: 30px auto;
-    background: #000000;
-    width: 600px;
-    height: 3px;
 }
 
 
@@ -488,6 +480,12 @@ body {
 
     .logo, .nav__link{
         font-size: 16px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .nav__link{
+       padding: 0 10px;
     }
 }
 
