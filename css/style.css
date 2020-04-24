@@ -486,14 +486,9 @@ body {
         margin: 0 40px;
     }
 
-    .logo{
+    .logo, .nav__link{
         font-size: 16px;
     }
-
-    .nav__link {
-        font-size: 16px;
-    }
-
 }
 
 
@@ -526,6 +521,10 @@ body {
     .text {
         font-size: 20px;
     }
+
+    .logo, .nav__link{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -541,17 +540,17 @@ body {
         width: 22px;
     }
 
-    .logo{
-        font-size: 12px;
-    }
-
-    .nav__link {
-        font-size: 12px;
+    .logo, .nav__link{
+        font-size: 14px;
     }
 }
 
 @media (max-width: 380px) {
     .super__link-out {
         margin: 0 5px;
+    }
+
+    .logo, .nav__link{
+        font-size: 12px;
     }
 }
