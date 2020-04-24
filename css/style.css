@@ -196,6 +196,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-logo {
@@ -385,7 +386,7 @@ body {
     }
 
     .logo , .nav__link {
-        font-size: 22px;
+        font-size: 20px;
 
     }
 
@@ -477,6 +478,7 @@ body {
     .super__link-out {
         width: 32px;
         margin: 0 5px;
+        line-height: 32
     }
 
     .logo_img {
@@ -532,7 +534,6 @@ body {
 
     .super__link-out {
         width: 22px;
-        margin: 0 5px;
     }
 
     .contacts_link {
