@@ -273,9 +273,9 @@ body {
 
 .interesting {
     display: inline-block;
-    height: 30px;
+    height: 20px;
     margin: 0 5px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     outline: none;
@@ -522,6 +522,14 @@ body {
     .logo, .nav__link{
         font-size: 14px;
     }
+
+    .footer__flex {
+        justify-content: center;
+    }
+
+    .logo_img {
+        margin: 0;
+    }
 }
 
 @media (max-width: 460px) {
@@ -545,6 +553,14 @@ body {
 @media (max-width: 380px) {
     .super__link-out {
         margin: 0 5px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
     }
 
     .logo, .nav__link{
