@@ -30,10 +30,17 @@ body {
     padding: 0 0 20px;
 }
 
+.title-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0 0 20px;
+}
+
 .text {
     line-height: 18px;
     font-style: italic;
-    padding: 0 0 15px;
+    padding: 0 60px 15px;
 }
 
 
@@ -67,13 +74,13 @@ body {
     text-decoration: none;
     outline: none;
 
-    transition: all 0.2s ease
+    transition: all 0.2s ease;
 }
 
 .nav__link:hover {
     border-radius: 8px;
     background-color: #00000089;
-    transition: all 0.2s ease
+    transition: all 0.2s ease;
 }
 
 
@@ -293,6 +300,12 @@ label, a{ /*при наведении на стрелки или переклю�
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.footer-logo:hover {
+    border-radius: 8px;
+    background-color: #00000089;
 }
 
 .logo_img {
@@ -305,6 +318,21 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .li {
     line-height: 25px;
+    transition: all 0.2s ease;
+    padding: 0 7px 0 0;
+    
+}
+
+.super__link {
+    color: #fff;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.li:hover{
+    border-radius: 8px;
+    background-color: #00000089;
 }
 
 .info__li1 {
@@ -336,10 +364,16 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 .footer__links {
-    margin-left: 70px;
+    margin-left: 60px;
 }
 
 .contacts_link {
     width: 32px;
     padding: 0 5px;
+    transition: all 0.2s ease;
+}
+
+.contacts_link:hover {
+    border-radius: 8px;
+    background-color: #00000089;
 }
