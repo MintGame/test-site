@@ -6,6 +6,11 @@
 
 /* Content */
 
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -210,6 +215,7 @@ body {
 .footer-logo:hover {
     border-radius: 8px;
     background-color: #00000089;
+    transition: all 0.2s ease;
 }
 
 .logo_img {
@@ -241,6 +247,7 @@ body {
 .li:hover{
     border-radius: 8px;
     background-color: #00000089;
+    transition: all 0.2s ease;
 }
 
 .info__li1 {
@@ -291,6 +298,7 @@ body {
 .contacts_link:hover {
     border-radius: 8px;
     background-color: #00000089;
+    transition: all 0.2s ease;
 }
 
 
@@ -325,7 +333,17 @@ body {
     text-decoration: none;
     outline: none;
     color: #ffffff;
-    padding: 30px;
+    padding: 15px;
+
+    transition: all 0.2s ease;
+}
+
+.tik:hover {
+    color: #000;
+    background-color: #fff;
+    border-radius: 8px;
+
+    transition: all 0.2s ease;
 }
 
 .make {
@@ -357,7 +375,7 @@ body {
 
 /* Adapive */
 
-@media screen and (max-width: 970px) {
+@media (max-width: 970px) {
     .out-container {
         max-width: 100%;
     }
@@ -403,7 +421,7 @@ body {
 }
 
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .container {
         max-width: none;
     }
@@ -476,7 +494,7 @@ body {
 }
 
 
-@media screen and (max-width: 520px) {
+@media (max-width: 520px) {
     .videoyt {
         width: 320px;
         height: 180px;
@@ -507,7 +525,7 @@ body {
     }
 }
 
-@media screen and (max-width: 460px) {
+@media (max-width: 460px) {
     .info__img {
         width: 350px;
     }
@@ -527,5 +545,11 @@ body {
 
     .nav__link {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .super__link-out {
+        margin: 0 5px;
     }
 }
