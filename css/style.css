@@ -299,7 +299,7 @@ body {
     min-height:100%;
     overflow:hidden;
     position:fixed;
-    top: 15px;
+    top: 5px;
     display: none;
 }
 .b-popup .b-popup-content{
