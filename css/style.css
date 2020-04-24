@@ -408,10 +408,6 @@ body {
         max-width: none;
     }
 
-    .logo , .nav__link {
-        font-size: 26px;
-    }
-
     .title {
         font-size: 32px;
     }
@@ -503,6 +499,12 @@ body {
         width: 28px;
     }
 
+    .title {
+        font-size: 26px;
+    }
+    .text {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 460px) {
